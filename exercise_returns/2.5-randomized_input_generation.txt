@@ -1,0 +1,16 @@
+1: What is the advantage of using constrained random sequences instead of directed testing?
+   Reduced manual effort and bigger coverage, and more likely to hit corner cases.
+
+2: Which signals you decided to randomize? Did you use constraints for randomization?
+   We randomised the input signals in transaction; data_to_DUT, write_enable and read_enable.
+   We used constraints for randomization.
+
+3: What is the reason for creating a new test for the constrained random testing instead of modifying the test_base?
+   Then we can run parallel tests. In this way we have one randomized test and one directed test.
+   
+4: Why is it better to tell the test name in the simulator command line instead of top level?
+   That way we can choose the test in the beginning of the run.
+
+5: How much time you used to finish this exercise?
+   * Group member 1: Santeri Laurila <06:00>
+   * Group member 2: Alper Özaslan <06:00>

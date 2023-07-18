@@ -1,0 +1,30 @@
+1: (if you did t1) 
+1.1: Did you see the problem when testing before implementing the do_copy() method? Did the problem go away afterwards?
+
+1.2: Why do you have to $cast rhs to rhs_ in the reference implementation?
+
+
+2: (if you did t2) 
+2.1: Did you see your new sequence in a) The topology print? b) The factory configuration print? Why / why not?
+
+2.2: What benefits and downsides do you find in the factory override way of doing things?
+
+
+3: (if you did t3) Do you think your test coverage actually improved after doing this? 
+
+
+4: (if you did t4) 
+4.1: Did you see the rst_n go low during the test in the first part? Why / why not?
+
+4.2: The FIFO is not really a good DUT for demonstrating the power of constraints. Give an example of a real-life testcase where constraints would really be useful.
+
+
+5: (if you did t5) What kind of time limit and coverage goal did you decide?
+
+
+6: (if you did t6) What did you decide to print in the logs?
+
+
+7: How much time you used to finish this exercise?
+* Group member 1: <hh:mm>
+* Group member 2: <hh:mm>

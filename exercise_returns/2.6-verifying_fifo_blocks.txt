@@ -1,0 +1,24 @@
+1: What kind of bugs did you find?
+1.1: fifo1.vhd
+     bugs
+
+1.2: fifo2.vhd
+     bugs
+
+2: (Optional) To implement the same kind of behaviour in fifo.vhd, which code lines should you edit and how?
+(Give line number and your modification)
+1.1: fifo1.vhd
+
+1.2: fifo2.vhd
+
+3: Did you have to modify your environment to see the bugs? Where and why?
+   Modify scoreboard for more coverage
+
+
+4: Did you have to modify your tests or sequences to see the bugs? Where and why?
+   yes
+
+
+5: How much time you used to finish this exercise?
+* Group member 1: Santeri Laurila <08:00>
+* Group member 2: Alper Özaslan   <08:00>

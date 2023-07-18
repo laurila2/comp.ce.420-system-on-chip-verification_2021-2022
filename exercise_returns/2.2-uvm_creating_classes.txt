@@ -1,0 +1,34 @@
+1: What is the responsibility of the monitor in UVM environment?
+
+   An UVM monitor is responsible for capturing signal activity from the design
+   interface and translate it into transaction level data objects that can be
+   sent to other components.
+
+2: Why do we create the monitor in the agent and not directly in the environment?
+
+   Its useful for the reusability. Its also part of UVM architecture
+   and structure. 
+
+3: What is the reason for extending your monitor from uvm_monitor base class
+   instead of declaring the class yourself?
+
+   The Extended Class contains everything declared in the Base Class. In addition,
+   we may choose to add additional Properties and/or Methods. We can also override
+   the existing Methods. This way we can take the Original Base Classes and modify
+   them as we like without disturbing the existing functionalities.
+
+4: What is the difference between tasks and functions in SystemVerilog?
+   Why is the run_phase method a task, when other phase methods seem to
+   be functions?
+
+   A function is meant to do some processing on the input and return a single value, whereas
+   a task is more general and can calculate multiple result values and return them using output
+   and inout type arguments.
+
+   Tasks can contain simulation time consuming elements such as @, posedge and others.
+   This is why run_phase is a task.
+
+5: How much time you used to finish this exercise?
+
+   * Group member 1: Santeri Laurila (274301) <03:00>
+   * Group member 2: Alper Özaslan (281765)  <03:00>

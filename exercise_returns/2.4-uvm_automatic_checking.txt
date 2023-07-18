@@ -1,0 +1,9 @@
+1: What is the responsibility of the scoreboard in UVM environment?
+   UVM scoreboard is a verification component that
+   contains checkers and verifies the functionality of a design.
+   It usually receives transaction level objects captured from the
+   interfaces of a DUT via TLM Analysis Ports.
+
+2: How much time you used to finish this exercise?
+   * Group member 1: Santeri Laurila <08:00>
+   * Group member 2: Alper Özaslan   <08:00>

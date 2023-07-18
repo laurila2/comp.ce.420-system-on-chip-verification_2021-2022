@@ -1,0 +1,18 @@
+1: What was your coverpoint coverage before doing changes to the testbench?
+
+
+1.1: Do you trust this number?
+
+
+2: What was your coverpoint coverage after doing changes to the testbench?
+
+
+2.1: Do you trust this number?
+
+
+3: What kind of constraints and coverpoint bins did you add?
+
+
+4: How much time you used to finish this exercise?
+* Group member 1: <hh:mm>
+* Group member 2: <hh:mm>

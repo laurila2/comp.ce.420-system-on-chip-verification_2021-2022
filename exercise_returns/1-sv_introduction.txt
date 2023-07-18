@@ -1,0 +1,24 @@
+Group member 1: Santeri Laurila, 274301
+Group member 2: Alper Özaslan, 281765
+
+1: Do you have previous experience of hardware description languages? Which of these design languages/paradigms have you used before?
+<VHDL | Verilog/SystemVerilog | SystemC | High-level Synthesis | others?>
+
+Santeri: Experience in VHDL, SystemC
+Alper: VHDL, Verilog
+
+2: What is the advantage of using a testbench rather than a ".do" file?
+
+With testbenches you can have more flexibility with functionality than with .do-files.
+
+3: Why do we call these testbenches simple testbenches? What crucial testbench functionality is missing?
+
+Usually tb is in a diffrent file. Here we also didnt have any checks. We just eyeballed the results from the testbench.
+
+4: What is the difference between initial and always procedures in SystemVerilog?
+
+Initial processes execute once, procedures repeatedly execute forever.
+
+5: How much time you used to finish this exercise?
+* Group member 1: <3:00>
+* Group member 2: <3:00>

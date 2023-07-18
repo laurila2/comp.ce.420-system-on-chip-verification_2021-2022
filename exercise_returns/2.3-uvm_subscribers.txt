@@ -1,0 +1,32 @@
+1: What is the responsibility of the coverage collector in UVM environment?
+   Coverage collector receives the data to be analyzed and process output.
+
+   Functional coverage in UVM is a user-defined metric that measures how much
+   ofthe design specification that are captured in the test plan has been
+   exercised. 
+
+2: What is a covergroup? 
+   Covergroup is a user-defined type that encapsulates the specification of a
+   coverage model. They can be defined once and instantiated multiple times at
+   different places via the new function.
+
+   covergroup usually encapsulates the following information:
+    - a set of coverage points
+    - cross coverage between coverage points
+    - an event that defines when the covergroup is sampled
+    - other options to configure the coverage object
+
+
+3: Why did we declare the coverage collector functionality as write() method instead of run_phase task?
+   The write function receive transaction from the class your subscribers connected
+   But the run phase doesn't receive anything, it's only a part of a class life circle.
+
+4: What kind of coverage data did you see in the coverage report?
+   Coverage data can be analyzed by structure or by type. In type, we see the information about the
+   covergroups we have defined earlier. We can see bitwise coverage, seeing which bins are hit and which
+   ones are missed. It is clear that  our case didn't hit all the bins meaning that we didn't obtain full coverage.
+
+
+5: How much time you used to finish this exercise?
+   * Group member 1: Santeri Laurila <05:00>
+   * Group member 2: Alper Özaslan   <05:00>

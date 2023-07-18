@@ -1,0 +1,67 @@
+
+Title: UVM Register Package Overview
+
+This page provides a brief overview of the contents of this kit.
+
+Complete online documentation is at your fingertips. Use the navigation
+bar at left to expand categories and click on the topic of choice.
+The body of the documentation is also hyperlinked for convenient
+navigation to related topics or more detailed descriptions of a
+particular class method or variable.
+
+
+Group: Register Base Classes
+
+The Register Bases classes consist of the unparameterized
+base class uvm_register_base and the parameterized base 
+class uvm_registger, which extends uvm_register_base.
+
+Group: Register File
+
+The Register file is used to describe a collection of registers
+within a device. Each register is added to the register file at the 
+address or addresses that it occupies.
+
+Group: Address Map
+
+An Address map is used to model two or more devices in a system.
+It contains all the registers and appropriate addresses. An address
+can be created by adding register files or address maps.
+
+Group: Automated Tests
+
+Automated tests help test connectivity and certain simple 
+functionality without writing tests.
+
+Group: Custom Tests
+
+Specific test situations can be created that are either directed
+tests testing certain capabilities of specific registers, or that
+are additional automated tests not provided by the base library.
+
+Group: Run the examples
+
+The examples demonstrate possible use models for the
+register package. There are many ways to use the package
+not illustrated by the examples, but the examples provide
+a basis to extend and use directly.
+
+In order to run the examples, you must have installed a compatable UVM version. The latest UVM release is available at www.ovmworld.org.
+
+The examples have been tested on Questa 6.4, 6.4a, 6.4b, 6.4c and 6.5Beta1 on Linux, Cygwin and Windows with UVM 2.0 and 
+UVM 2.0.1.:
+
+Point your environment variable UVM_HOME to the UVM installation:
+
+: % setenv UVM_HOME <my_install_area>/uvm-2.0.1
+
+Run the stopwatch example:
+
+: % cd examples/registers/00_stopwatch
+: % make
+
+Run the simple bus transaction example:
+
+: % cd examples/registers/01_bus_transactions
+: % make
+

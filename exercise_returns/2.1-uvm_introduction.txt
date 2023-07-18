@@ -1,0 +1,55 @@
+1: Do you have previous experience of verification? Which of these have you used before?
+<self-checking VHDL testbenches | UVM | OVM | eRM/AVM/RVM/VMM/other methodologies | Formal verification>
+Santeri: self-checking VHDL tbs, UVM tbs
+Alper: self-checking VHDL tbs, UVM tbs
+
+2: What is a DUT?
+DUT = Device Under Test
+
+3: What does the UVM environment contain?
+UVM environment contains multiple reusable verification components and defines their default configuration as
+required for the application. It contains classes, objects, interfaces, testcases, transactions, etc.
+
+4: If you were to declare your own component class "my_class" to this UVM environment: 
+  4.1: Which folder would be the convenient place for your file?
+       fifo_tb_pkg
+
+  4.2: How would you name your new file?
+       my_class.svh
+
+  4.3: How would you add your new file to be compiled?
+       We add the new file to fifo_tb_pkg.sv in fifo_tb/fifo_tb_pkg/
+
+
+5: The driver is the component responsible for driving the DUT input signals.
+   Open the driver and DUT descriptions and answer the following:
+  5.1: What is the input port name for "write enable" signal in the DUT?
+       dut_vi.we_out
+
+  5.2: Which line in the driver code drives the DUT signal "write enable"? What is the signal name there?
+       L53, write_enable
+
+  5.3: Where does this difference come from - how are these signals connected to each other?
+       Which files in the UVM environment are responsible for this?
+       
+       Driver drives the signals to the ports for the DUT.
+       Through the virtual interface declared in dut_config.svh. Files: driver.svh, dut_config.svh, dut_if.sv
+
+  5.4: There is also a transaction object tx in the driver. How is this object related to DUT signals?
+  
+       What is the name for the "write enable" signal there?
+       
+       tx is the transaction handler. When the handler is active, its blocking read. After the sequencer is done,
+       read is enabled again. "write enable" signal is called write_enable in transaction-class.
+       Transaction-object contains the transaction data and its constraints.
+
+  5.5: Where is this transaction object first created and how is it delivered to the driver?
+  
+       Transaction object is first created in sequence.svh -file, line 27.
+       Object is delivered to driver with the hander tx in driver.svh
+
+
+6: How much time you used to finish this exercise?
+
+       * Group member 1: (Santeri Laurila, 274301): <03:00>
+       * Group member 2: (Alper Özaslan, 281765):   <03:00>

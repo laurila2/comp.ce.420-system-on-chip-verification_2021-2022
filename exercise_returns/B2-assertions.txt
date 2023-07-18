@@ -1,0 +1,12 @@
+1: What is the difference between concurrent and immediate assertions?
+
+
+2: How does validation differ from verification?
+
+
+3: Did you see any problems in the design and/or specification?
+
+
+4: How much time you used to finish this exercise?
+* Group member 1: <hh:mm>
+* Group member 2: <hh:mm>
